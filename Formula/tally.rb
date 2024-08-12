@@ -5,20 +5,20 @@
 class Tally < Formula
   desc "Tally up source files in a directory"
   homepage "https://github.com/ahmedsaheed/tally"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_intel do
-      url "http://github.com/ahmedsaheed/tally/releases/v0.1.1/tally_Darwin_x86_64.tar.gz"
-      sha256 "a489b61e43bfa0c539e17a81569a20e1bf1b1d331bd422d71757024c25bca980"
+      url "http://github.com/ahmedsaheed/tally/releases/download/v0.1.2/tally_Darwin_x86_64.tar.gz"
+      sha256 "67fda5f8e7fc7e32e796107c40de59b84f768e35ffb6b77ef091d6decda69288"
 
       def install
         bin.install "tally"
       end
     end
     on_arm do
-      url "http://github.com/ahmedsaheed/tally/releases/v0.1.1/tally_Darwin_arm64.tar.gz"
-      sha256 "e2e75d0e506a885f0ce34954974a3bac9acd8a89d5080472e18299bb0f25058b"
+      url "http://github.com/ahmedsaheed/tally/releases/download/v0.1.2/tally_Darwin_arm64.tar.gz"
+      sha256 "9bd64b061e3cae0a929811ea50acfd4821544e41accdceeec3df60b1571edc71"
 
       def install
         bin.install "tally"
@@ -29,8 +29,8 @@ class Tally < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "http://github.com/ahmedsaheed/tally/releases/v0.1.1/tally_Linux_x86_64.tar.gz"
-        sha256 "419cd4b3cac81fed5dba4ad02eb2a059014d64f9b04efa863ce4a12eafb5fe41"
+        url "http://github.com/ahmedsaheed/tally/releases/download/v0.1.2/tally_Linux_x86_64.tar.gz"
+        sha256 "a8d74ac28cd5e3cd46eb8d0a8507ba38a346bdda0be36780604a8fab4126ffdd"
 
         def install
           bin.install "tally"
@@ -39,8 +39,8 @@ class Tally < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "http://github.com/ahmedsaheed/tally/releases/v0.1.1/tally_Linux_arm64.tar.gz"
-        sha256 "7a65839606e02741dbcddf1e180b75904ccb8efeb2172a2504d5e517529c313b"
+        url "http://github.com/ahmedsaheed/tally/releases/download/v0.1.2/tally_Linux_arm64.tar.gz"
+        sha256 "a71eee872b6b4f5e50a74d8cfa59505cec62c16faa2b949bb90ae3460085a8d9"
 
         def install
           bin.install "tally"
